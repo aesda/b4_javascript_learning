@@ -1,14 +1,14 @@
-let counter = 10;
+let counter = 0;
 const plusBtn = document.getElementById('plus_btn');
 plusBtn.addEventListener('click', function() {
-    counter = counter + getStep;
+    counter = counter + getStep();
     writeCounter();
 
 });
 
 const minusBtn = document.getElementById('minus_btn');
 minusBtn.addEventListener('click', function() {
-    counter = counter - getStep;
+    counter = counter - getStep();
     writeCounter();
 });
 
